@@ -1,0 +1,449 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
+:root {
+  --light-gray: #252b42;
+  --light-blue: #23a6f0;
+  --dark-blue: rgb(7, 7, 87);
+  --purple: #b00cf4;
+  --white: #fbfcfb;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+}
+.hero-image {
+  background: rgba(0, 0, 0, 0.4) url("images/hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  height: 98vh;
+}
+header {
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  color: var(--white);
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+/* Style logo */
+.navbar .logo {
+  flex: 1;
+}
+.navbar .logo h3 {
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+/* Style navbar items */
+.navbar .nav-items {
+  flex: 3;
+}
+.nav-items ul {
+  display: flex;
+  margin-left: 2rem;
+}
+.nav-items ul li {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 1.2rem;
+}
+.nav-items ul li a {
+  text-decoration: none;
+  color: var(--white);
+}
+/* Styling login */
+.navbar .account {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .account p {
+  margin-right: 2rem;
+  font-weight: 500;
+}
+.account .become-member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  background-color: var(--light-blue);
+}
+.account .become-member p {
+  margin-right: 0.7rem;
+}
+
+/* Styling Hero text */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 73vh;
+}
+.hero-section .hero-text {
+  height: auto;
+  width: 30rem;
+  text-align: center;
+}
+.hero-section .hero-text h1 {
+  font-size: 3rem;
+  color: var(--white);
+  line-height: 4.5rem;
+  margin-bottom: 2rem;
+}
+.hero-section .hero-text p {
+  color: var(--white);
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  margin-bottom: 2rem;
+}
+.hero-section .hero-text .hero-links {
+  display: flex;
+  justify-content: center;
+}
+.hero-section .hero-text .hero-links a {
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+}
+.hero-section .hero-text .hero-links a:first-child {
+  background-color: var(--light-blue);
+  margin-right: 0.6rem;
+}
+.hero-section .hero-text .hero-links a:last-child {
+  border: 1px solid var(--white);
+}
+
+/* Main section */
+main {
+  width: 70vw;
+  margin: 0 auto;
+}
+/* Why-us-cards section */
+.why-us-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.why-us-cards .card {
+  padding: 1.5rem;
+  margin-top: -4.3rem;
+  margin-right: 1.5rem;
+  background-color: var(--white);
+  box-shadow: 5px 10px 18px #9c9c9c;
+}
+.why-us-cards .card h2 {
+  color: var(--light-gray);
+}
+.why-us-cards .card p {
+  color: var(--light-gray);
+}
+.why-us-cards .card ion-icon {
+  font-size: 48px;
+  color: var(--light-blue);
+}
+.why-us-cards .card h2 {
+  margin-bottom: 0.5rem;
+}
+/* Last card is different */
+.why-us-cards .third-card {
+  margin-right: 0;
+  color: var(--white);
+  background-color: var(--light-blue);
+}
+.why-us-cards .third-card h2 {
+  color: var(--white);
+}
+.why-us-cards .third-card p {
+  color: var(--white);
+}
+.why-us-cards .third-card ion-icon {
+  color: var(--white);
+}
+
+/* Why-us-block section */
+.why-us-block {
+  display: flex;
+  margin: 10rem 0;
+  justify-content: space-between;
+}
+.why-us-block .card {
+  width: auto;
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--light-gray);
+  /* background-color: #23a6f0; */
+  background-color: var(--white);
+}
+.why-us-block .card h3 {
+  margin: 0.5rem;
+}
+.why-us-block .card ion-icon {
+  font-size: 56px;
+  align-items: center;
+  color: var(--light-blue);
+}
+.why-us-block .card h2 {
+  margin: 1rem 0;
+}
+
+/* Industry section */
+.industry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+  /* background-color: #23a6f0; */
+}
+.industry div {
+  width: 55%;
+  text-align: center;
+  color: var(--light-gray);
+}
+.industry div h2 {
+  margin-bottom: 1rem;
+}
+
+/* Testimonies */
+.testimonies {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+}
+.testimonies .testimonial-card {
+  width: 17rem;
+  height: auto;
+  padding: 2.2rem 0;
+  text-align: center;
+  border: 1px solid rgb(223, 215, 215);
+  border-radius: 5px;
+}
+.testimonies .testimonial-card > img {
+  height: 8rem;
+  width: 8rem;
+}
+.testimonies .testimonial-card p {
+  margin: 1rem;
+  color: var(--light-gray);
+}
+
+/* Styling sponsors section */
+.sponsors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10rem 0 3rem;
+}
+.sponsors img {
+  height: auto;
+  width: 5rem;
+}
+
+/* Styling the Newsletter */
+.newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  margin-bottom: 7rem;
+  color: var(--white);
+  background-image: linear-gradient(to right, var(--light-gray), var(--purple));
+}
+.newsletter h2 {
+  flex: 1;
+}
+.newsletter form {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  height: 3rem;
+}
+.newsletter form input {
+  border: none;
+}
+.newsletter form input:focus {
+  outline: none;
+}
+.newsletter form input:first-child {
+  width: 20rem;
+  border-radius: 5px 0 0 5px;
+  padding-left: 1rem;
+}
+.newsletter form input:last-child {
+  padding: 0 0.5rem;
+  border-radius: 0 5px 5px 0;
+  color: var(--white);
+  cursor: pointer;
+  background-color: var(--light-blue);
+}
+/* Pricing */
+.pricing {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  margin: 0rem;
+  /* background-color: #23a6f0; */
+}
+.pricing .pricing-title {
+  align-self: center;
+  width: 55%;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: var(--light-gray);
+}
+.pricing .pricing-title div h2 {
+  margin-bottom: 1rem;
+}
+/* Pricing plan styling */
+.pricing .pricing-plans {
+  display: flex;
+  height: 35rem;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.pricing-plans .plan {
+  border: 1px solid var(--light-blue);
+  width: 20rem;
+  height: 92%;
+  margin-bottom: 0;
+  padding: 3rem 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--light-gray);
+}
+.pricing-plans .plan .wrapper {
+  width: 90%;
+}
+/* Upper part of the pricing plan card */
+.pricing-plans .plan .wrapper .upper-part {
+  text-align: center;
+}
+.pricing-plans .plan .wrapper .upper-part h3 {
+  margin-bottom: 2rem;
+}
+.pricing-plans .plan .wrapper .upper-part h5 {
+  font-weight: 800;
+  margin: 0 4.5rem;
+}
+/* Style the standard plan card */
+.pricing-plans .standard-plan {
+  height: 100%;
+  color: var(--white);
+  background-color: var(--light-gray);
+}
+.pricing-plans .plan .wrapper .upper-part .plan-amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.8rem 0;
+  color: var(--light-blue);
+}
+.pricing-plans .plan .wrapper .upper-part .plan-amount p {
+  font-weight: 800;
+  font-size: 1.9rem;
+}
+.pricing-plans .plan .wrapper .upper-part .plan-amount div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+.pricing-plans .plan .wrapper .upper-part .plan-amount div > span {
+  margin-bottom: 0.3rem;
+}
+.pricing-plans .plan .wrapper .upper-part .plan-amount div span:last-child {
+  color: var(--light-blue);
+  opacity: 0.6;
+  font-weight: 500;
+}
+/* feature section of the pricing section */
+.pricing-plans .plan .wrapper .features {
+  display: flex;
+  flex-direction: column;
+}
+.pricing-plans .plan .wrapper .features p {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.pricing-plans .plan .wrapper .features p ion-icon {
+  font-size: 32px;
+  margin-right: 0.3rem;
+  color: rgb(55, 165, 88);
+}
+.pricing-plans .plan .wrapper .features p:nth-child(4) ion-icon,
+.pricing-plans .plan .wrapper .features p:nth-child(5) ion-icon {
+  color: rgb(157, 163, 159);
+}
+/* Try for free section */
+.pricing-plans .plan .free-tier {
+  background-color: var(--light-blue);
+  border-radius: 5px;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 0rem;
+  text-align: center;
+}
+
+/* Styling the Footer */
+footer .wrapper {
+  color: var(--white);
+  height: 40rem;
+  margin-top: 6rem;
+  background-color: var(--light-gray);
+}
+.wrapper .branches {
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 4rem;
+}
+.wrapper .branches .branch-description h3 {
+  font-weight: 800;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+.wrapper .branches .branch-description p {
+  font-size: 1rem;
+}
+.wrapper .branches .world-map img {
+  height: 10rem;
+  width: auto;
+}
+
+/* Styling form section */
+.appointment {
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  height: 30rem;
+}
+.appointment .image-section {
+}
+.appointment .image-section img {
+  height: 100%;
+  width: 100%;
+}
