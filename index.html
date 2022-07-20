@@ -364,56 +364,124 @@
 
       <!-- Book Appointment section -->
       <section class="appointment">
-        <!-- Image -->
-        <div class="image-section">
-          <img src="images/contact.png" alt="" />
-        </div>
-        <!-- Contact form -->
-        <div class="form-wrapper">
-          <div class="form-container">
-            <!-- Form header -->
-            <span><h4>Book Appointment</h4></span>
-            <!-- Form inputs -->
-            <form action="#">
-              <!-- Name input -->
-              <div>
-                <label for="name>Name *</label>
-                <input type="text" placeholder="Full Name*" name="name"/>
-              </div>
-              <!-- Email input -->
-              <div class="email">
-                <label for="email">Email address *</label>
-                <input type="email" placeholder="example@gmail.com *" name="email"/>
-              </div>
-              <!-- Department input -->
-              <div class="department">
-                <label for="department">Department *</label>
-                <select name="department">
-                  <option value="" disabled selected>Please Select</option>
-                  <option value="volvo">Department A</option>
-                  <option value="saab">Department B</option>
-                  <option value="mercedes">Department C</option>
-                </select>
-              </div>
-              <!-- Time input -->
-              <div class="time">
-                <label for="time">Time *</label>
-                <select name="time">
-                  <option value="" disabled selected>4:00 Available</option>
-                  <option value="volvo">19:00</option>
-                  <option value="saab">21:30</option>
-                  <option value="mercedes">00:00</option>
-                </select>
-              </div>
-              <!-- Submit Button -->
-              <div>
-                <input type="submit" value="Book Appointment" />
-              </div>
-            </form>
+        <div class="appointment-wrapper">
+          <!-- Image -->
+          <div class="image-section">
+            <img src="images/contact.png" alt="" />
+          </div>
+          <!-- Contact form -->
+          <div class="form-wrapper">
+            <div class="form-container">
+              <!-- Form header -->
+              <span><h4>Book Appointment</h4></span>
+              <!-- Form inputs -->
+              <form action="#">
+                <!-- Name input -->
+                <div class="form-input name">
+                  <label for="name">Name *</label>
+                  <input type="text" placeholder="Full Name*" name="name" />
+                </div>
+                <!-- Email input -->
+                <div class="form-input email">
+                  <label for="email">Email address *</label>
+                  <input
+                    type="email"
+                    placeholder="example@gmail.com *"
+                    name="email"
+                  />
+                </div>
+                <!-- Department input -->
+                <div class="form-input department">
+                  <label for="department">Department *</label>
+                  <select name="department">
+                    <option value="" disabled selected>Please Select</option>
+                    <option value="volvo">Department A</option>
+                    <option value="saab">Department B</option>
+                    <option value="mercedes">Department C</option>
+                  </select>
+                </div>
+                <!-- Time input -->
+                <div class="form-input time">
+                  <label for="time">Time *</label>
+                  <select name="time">
+                    <option value="" disabled selected>4:00 Available</option>
+                    <option value="volvo">19:00</option>
+                    <option value="saab">21:30</option>
+                    <option value="mercedes">00:00</option>
+                  </select>
+                </div>
+                <!-- Submit Button -->
+                <div>
+                  <input
+                    class="submit"
+                    type="submit"
+                    value="Book Appointment"
+                  />
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- Consulting section -->
+      <section class="consulting">
+        <div class="content-wrapper">
+          <div>
+            <h4>Consulting Agency For Your Business</h4>
+            <p>the quick fox jumps over the lazy dog</p>
+          </div>
+          <!-- Contact button -->
+          <div>Contack Us</div>
+        </div>
+      </section>
     </footer>
+
+    <!-- Footer links section -->
+    <section class="footer-links">
+      <div class="footer-links-wrapper">
+        <!-- First card -->
+        <div class="company-info">
+          <h4>Company Info</h4>
+          <a href="#">About Us</a>
+          <a href="#">Career</a>
+          <a href="#">We are hiring</a>
+          <a href="#">Blog</a>
+        </div>
+        <!-- Second card -->
+        <div class="legal">
+          <h4>Legal</h4>
+          <a href="#">About Us</a>
+          <a href="#">Career</a>
+          <a href="#">We are hiring</a>
+          <a href="#">Blog</a>
+        </div>
+        <!-- Third card -->
+        <div class="features">
+          <h4>Features</h4>
+          <a href="#">Business Marketing</a>
+          <a href="#">User Analytic</a>
+          <a href="#">Live Chat</a>
+          <a href="#">Unlimited Support</a>
+        </div>
+        <!-- Fourth card -->
+        <div class="resources">
+          <h4>Resources</h4>
+          <a href="#">iOS & Android</a>
+          <a href="#">Watch a Demo</a>
+          <a href="#">Customers</a>
+          <a href="#">API</a>
+        </div>
+        <!-- Fifth card -->
+        <div class="company-info">
+          <h4>Get In Touch</h4>
+          <a href="#">About Us</a>
+          <a href="#">Career</a>
+          <a href="#">We are hiring</a>
+          <a href="#">Blog</a>
+        </div>
+      </div>
+    </section>
     <!-- Enable ionic icons -->
     <script
       type="module"
