@@ -783,5 +783,224 @@ footer .wrapper {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
+  /* Style logo */
+  .navbar .logo h3 {
+    font-size: 1.5rem;
+  }
+  /* Styling Hero text */
+  .hero-section {
+    width: 70vw;
+    height: 60vh;
+    margin: 0 auto;
+  }
+  .hero-section .hero-text h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  /* Why-us-cards section */
+  .why-us-cards {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+  }
+  .why-us-cards .card:first-child {
+    margin: -4.3rem 0 1rem;
+  }
+  .why-us-cards .card {
+    margin: 0 0 1rem;
+  }
+  /* Why-us-block section */
+  .why-us-block {
+    flex-direction: column;
+    margin: 5rem 0;
+    justify-content: center;
+  }
+  /* Testimonies */
+  .testimonies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+  .testimonies .testimonial-card {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  /* Styling sponsors section */
+  .sponsors {
+    display: grid;
+    margin-top: 5rem;
+    align-items: center;
+    row-gap: 1rem;
+    grid-template-columns: auto;
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
+  }
+  .sponsors .img1 {
+    grid-area: img1;
+  }
+  .sponsors .img2 {
+    grid-area: img2;
+  }
+  .sponsors .img3 {
+    grid-area: img3;
+  }
+  .sponsors .img4 {
+    grid-area: img4;
+  }
+  .sponsors .img5 {
+    grid-area: img5;
+  }
+  .sponsors .img6 {
+    grid-area: img6;
+  }
+  /* Styling the Newsletter */
+  .newsletter {
+    flex-direction: column;
+  }
+  .newsletter form {
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  .newsletter form input {
+    height: 2rem;
+  }
+  /* Pricing plan styling */
+  .pricing .pricing-plans {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricing-plans .plan {
+    width: 100%;
+    padding: 1.5rem 0;
+    margin-bottom: 1rem;
+  }
+  .pricing-plans .plan .wrapper .upper-part h3 {
+    margin-bottom: 1rem;
+  }
+  /* Branches */
+  footer .wrapper {
+    height: 45rem;
+    margin-top: 6rem;
+  }
+  .wrapper .branches {
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper .branches .branch-description h3 {
+    text-align: center;
+  }
+  .wrapper .branches .branch-description p {
+    text-align: center;
+  }
+  .wrapper .branches .world-map img {
+    height: 8rem;
+    width: auto;
+    margin-top: 2rem;
+  }
+  /* Styling form section */
+  .appointment {
+    height: 24rem;
+    margin-top: -40%;
+  }
+  .appointment .appointment-wrapper .form-wrapper .form-container h4 {
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+  .form-container form .form-input {
+    margin-bottom: 0.4rem;
+  }
+  .form-container form .form-input label ~ input,
+  .form-container form .form-input label ~ select {
+    height: 2.3rem;
+    padding-left: 0.4rem;
+  }
+  /* Consulting section */
+  .consulting .content-wrapper div h4 {
+    font-size: 1rem;
+  }
+  .consulting .content-wrapper div p {
+    font-size: 0.9rem;
+  }
+  .consulting .content-wrapper > div + div {
+    height: 2rem;
+    width: 5rem;
+    font-size: 0.6rem;
+  }
+  /* Grid container */
+  .footer-links {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .footer-links .footer-links-wrapper {
+    grid-template-areas:
+      "company-info legal"
+      "features resources"
+      "get-in-touch get-in-touch";
+  }
+  /* Copyright section */
+  .copyright .copyright-wrapper {
+    flex-direction: column;
+  }
+  .copyright .copyright-wrapper > div {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  /* Hero links */
+  .hero-section .hero-text .hero-links a {
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+  }
+  .hero-section .hero-text .hero-links a:first-child {
+    background-color: var(--light-blue);
+    margin-right: 0.6rem;
+  }
+  .hero-section .hero-text .hero-links a:last-child {
+    border: 1px solid var(--white);
+  }
+  /* Styling form section */
+  .appointment .appointment-wrapper {
+    width: 100%;
+  }
+  .appointment .appointment-wrapper .form-wrapper .form-container h4 {
+    margin: 1rem;
+  }
+  /* Consulting section */
+  .consulting {
+    width: 100%;
+    display: flex;
+    margin-top: 3rem;
+    padding: 3rem 0;
+  }
+  .consulting .content-wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .consulting .content-wrapper > div + div {
+    margin-top: 1rem;
+  }
+  /* Footer links section */
+  .footer-links {
+    margin-top: 0;
+  }
+  /* Grid container (footer)*/
+  .footer-links .footer-links-wrapper {
+    grid-template-areas:
+      "company-info"
+      "legal"
+      "features"
+      "resources"
+      "get-in-touch";
+  }
+  /* Copyright section */
+  .copyright .copyright-wrapper > div {
+    margin-top: 1rem;
+  }
 }
