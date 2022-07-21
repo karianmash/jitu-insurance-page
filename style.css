@@ -534,7 +534,6 @@ footer .wrapper {
   justify-content: space-between;
   align-items: center;
 }
-.consulting .content-wrapper div h4,
 .consulting .content-wrapper div h4 {
   color: var(--light-gray);
   font-size: 1.5rem;
@@ -655,6 +654,16 @@ footer .wrapper {
   .nav-items ul li {
     margin-right: 0.9rem;
   }
+  /* Pricing plan styling */
+  .pricing .pricing-plans {
+    height: auto;
+  }
+  .pricing-plans .plan .wrapper .upper-part h3 {
+    margin-bottom: 1rem;
+  }
+  .pricing-plans .plan .wrapper .upper-part h5 {
+    margin: 0 4rem;
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -667,23 +676,58 @@ footer .wrapper {
   .navbar .menu ion-icon {
     display: block;
   }
+  /* Style logo */
+  .navbar .logo h3 {
+    font-size: 2rem;
+  }
+  .navbar .menu ion-icon {
+    font-size: 48px;
+  }
+  /* Why-us-cards section */
+  .why-us-cards .card {
+    margin-top: -6rem;
+  }
+  /* Why-us-block section */
+  .why-us-block {
+    margin: 5rem 0;
+  }
+  .why-us-block .card ion-icon {
+    font-size: 40px;
+  }
+  /* Testimonies */
+  .testimonies .testimonial-card {
+    width: 13rem;
+    padding: 2rem 0;
+  }
+  /* Styling the Newsletter */
+  .newsletter {
+    padding: 1.5rem;
+    margin-bottom: 5rem;
+  }
+  .newsletter h2 {
+    font-size: 1.3rem;
+  }
+  .newsletter form input:first-child {
+    width: 14rem;
+  }
+  /* pricing */
+  .pricing-plans .plan {
+    padding: 1rem 0;
+  }
   /* Styling branches section */
   footer .wrapper {
     height: 35rem;
   }
   .wrapper .branches .branch-description h3 {
-    font-size: 1.7rem;
-  }
-  .wrapper .branches .branch-description p {
-    font-size: 0.7rem;
+    font-size: 1.5rem;
   }
   .wrapper .branches .world-map img {
     height: 7rem;
-    margin-left: 3rem;
+    margin-left: 2.7rem;
   }
   /* Styling form section */
   .appointment {
-    height: 30rem;
+    height: 27rem;
     margin-top: -20%;
   }
   .appointment .appointment-wrapper .form-wrapper .form-container {
@@ -692,15 +736,24 @@ footer .wrapper {
   }
   .appointment .appointment-wrapper .form-wrapper .form-container h4 {
     width: 100%;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
     font-size: 1.5rem;
+  }
+  .form-container form .form-input {
+    margin-bottom: 0.6rem;
   }
   /* Consulting section */
   .consulting {
-    width: 100%;
-    display: flex;
     margin-top: 2rem;
     padding: 3rem 0;
+  }
+  .consulting .content-wrapper div h4 {
+    font-size: 1rem;
+  }
+  .consulting .content-wrapper > div + div {
+    height: 2rem;
+    width: 6rem;
+    font-size: 0.8rem;
   }
   /* Grid container */
   .footer-links {
@@ -712,4 +765,23 @@ footer .wrapper {
       "company-info legal features"
       "resources get-in-touch get-in-touch";
   }
+  .footer-links .footer-links-wrapper .card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .footer-links .footer-links-wrapper .card p {
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+  }
+  /* Copyright section */
+  .copyright {
+    margin-top: 2rem;
+    height: 2.5rem;
+  }
+  .copyright .copyright-wrapper p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
 }
