@@ -89,6 +89,10 @@ header {
 .account .become-member p {
   margin-right: 0.7rem;
 }
+.navbar .menu ion-icon {
+  font-size: 40px;
+  display: none;
+}
 /* Styling Hero text */
 .hero-section {
   display: flex;
@@ -133,11 +137,6 @@ header {
 main {
   width: 70vw;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.97) url("images/DSCN0234.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: soft-light;
 }
 /* Why-us-cards section */
 .why-us-cards {
@@ -322,7 +321,7 @@ main {
 .pricing .pricing-plans {
   display: flex;
   height: 35rem;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-end;
 }
 .pricing-plans .plan {
@@ -415,6 +414,7 @@ main {
 }
 
 /* Styling the Footer */
+/* Branches */
 footer .wrapper {
   color: var(--white);
   height: 40rem;
@@ -452,7 +452,6 @@ footer .wrapper {
   margin-top: -22%;
 }
 .appointment .appointment-wrapper {
-  background-color: #9c9c9c;
   display: flex;
   justify-content: center;
   width: 85%;
@@ -599,7 +598,7 @@ footer .wrapper {
 
 .footer-links .footer-links-wrapper .card {
   width: 100%;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
 }
 .footer-links .footer-links-wrapper .card h4 {
   font-weight: 800;
@@ -637,4 +636,80 @@ footer .wrapper {
   font-size: 20px;
   --ionicon-stroke-width: 48px;
   color: var(--light-blue);
+}
+
+@media screen and (max-width: 1260px) {
+  /* Styling login */
+  .navbar .account p {
+    margin-right: 0.5rem;
+  }
+  .account .become-member {
+    padding: 0.6rem;
+  }
+  .navbar .nav-items {
+    flex: 2;
+  }
+  .nav-items ul {
+    margin-left: 1rem;
+  }
+  .nav-items ul li {
+    margin-right: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .navbar .nav-items {
+    display: none;
+  }
+  .navbar .account {
+    display: none;
+  }
+  .navbar .menu ion-icon {
+    display: block;
+  }
+  /* Styling branches section */
+  footer .wrapper {
+    height: 35rem;
+  }
+  .wrapper .branches .branch-description h3 {
+    font-size: 1.7rem;
+  }
+  .wrapper .branches .branch-description p {
+    font-size: 0.7rem;
+  }
+  .wrapper .branches .world-map img {
+    height: 7rem;
+    margin-left: 3rem;
+  }
+  /* Styling form section */
+  .appointment {
+    height: 30rem;
+    margin-top: -20%;
+  }
+  .appointment .appointment-wrapper .form-wrapper .form-container {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .appointment .appointment-wrapper .form-wrapper .form-container h4 {
+    width: 100%;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+  }
+  /* Consulting section */
+  .consulting {
+    width: 100%;
+    display: flex;
+    margin-top: 2rem;
+    padding: 3rem 0;
+  }
+  /* Grid container */
+  .footer-links {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .footer-links .footer-links-wrapper {
+    grid-template-areas:
+      "company-info legal features"
+      "resources get-in-touch get-in-touch";
+  }
 }
