@@ -964,6 +964,9 @@ footer .wrapper {
   .hero-section .hero-text .hero-links a:last-child {
     border: 1px solid var(--white);
   }
+  .newsletter form input:first-child {
+    width: 6rem;
+  }
   /* Styling form section */
   .appointment .appointment-wrapper {
     width: 100%;
