@@ -953,10 +953,6 @@ footer .wrapper {
 
 @media screen and (max-width: 380px) {
   /* Hero links */
-  .hero-section .hero-text .hero-links a {
-    padding: 0.7rem 1.5rem;
-    border-radius: 30px;
-  }
   .hero-section .hero-text .hero-links a:first-child {
     background-color: var(--light-blue);
     margin-right: 0.6rem;
