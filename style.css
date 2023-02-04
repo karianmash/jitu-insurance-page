@@ -132,6 +132,11 @@ header {
 .hero-section .hero-text .hero-links a:last-child {
   border: 1px solid var(--white);
 }
+.hero-section .hero-text .hero-links a:last-child:hover {
+  background-color: var(--light-blue);
+  border: 1px solid var(--light-blue);
+  transition: all 0.3s ease-in;
+}
 
 /* Main section */
 main {
